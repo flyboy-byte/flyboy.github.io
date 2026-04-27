@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
-  <meta name="description" content="Logan Night — Automotive student, maker, Linux tinkerer, and hands-on problem solver." />
-  <title>Logan Night • Maker & Automotive Tech</title>
+  <meta name="description" content="Logan Night — GM ASEP automotive student, ASE-certified technician, Extra Class ham radio operator, maker, and Linux tinkerer." />
+  <title>Logan Night • Automotive Tech, Maker & Linux</title>
 
   <style>
     :root{
@@ -375,6 +375,9 @@
       grid-template-columns: repeat(12, 1fr);
       gap: 18px;
     }
+    .span12{ grid-column: span 12; }
+    .span6{ grid-column: span 6; }
+    .span4{ grid-column: span 4; }
     .card{
       grid-column: span 4;
       border: 1px solid var(--stroke);
@@ -440,10 +443,10 @@
       border-color: rgba(0,212,255,.3);
     }
     @media (max-width: 920px){
-      .card{ grid-column: span 6; }
+      .card, .span4{ grid-column: span 6; }
     }
     @media (max-width: 620px){
-      .card{ grid-column: span 12; }
+      .card, .span4, .span6, .span12{ grid-column: span 12; }
       nav{ display:none; }
     }
 
@@ -518,12 +521,13 @@
         <div class="dot" aria-hidden="true"></div>
         <div>
           <strong>Logan Night</strong><br />
-          <span>Automotive student • Maker • Linux</span>
+          <span>GM ASEP • ASE Certified • Maker • Linux</span>
         </div>
       </div>
 
       <nav aria-label="Primary">
         <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#credentials">Credentials</a>
         <a class="navlink" href="#skills">Skills</a>
         <a class="navlink" href="#projects">Projects</a>
         <a class="navlink" href="#contact">Contact</a>
@@ -539,7 +543,8 @@
             <h1>Hands-on problem solver.<br/>Mechanic brain, maker hands, Linux terminal.</h1>
             <p class="kicker">I diagnose systems — engines, electrons, and code.</p>
             <p class="heroText">
-              GM ASEP student. I build practical projects: ESP32 sensors, 3D-printed parts, and Linux-powered tools.
+              GM ASEP student with ASE certifications in electrical/electronic systems, steering & suspension, and brakes.
+              I build practical projects: open-source dashboards, drag racing tools, ESP32 sensors, 3D-printed parts, and Linux-powered utilities.
               If it breaks, I want the datasheet, the wiring diagram, and the log file.
             </p>
 
@@ -557,6 +562,8 @@
 
             <div class="chipRow" aria-label="Quick facts">
               <div class="chip"><b>Focus:</b> GM ASEP / diagnostics</div>
+              <div class="chip"><b>ASE:</b> electrical, steering/suspension, brakes</div>
+              <div class="chip"><b>Radio:</b> Extra Class</div>
               <div class="chip"><b>Tools:</b> Linux, soldering iron, CAD</div>
               <div class="chip"><b>Vibes:</b> build → test → fix</div>
             </div>
@@ -571,7 +578,7 @@
                 <div class="badge" aria-hidden="true">🔧</div>
                 <div>
                   <div class="liMain">Automotive systems + diagnostics</div>
-                  <div class="liSub">Modern vehicles are networks with wheels.</div>
+                  <div class="liSub">GM ASEP + ASE electrical, steering/suspension, and brakes.</div>
                 </div>
               </li>
               <li>
@@ -591,8 +598,8 @@
               <li>
                 <div class="badge" aria-hidden="true">📻</div>
                 <div>
-                  <div class="liMain">Ham radio</div>
-                  <div class="liSub">RF curiosity + useful comms.</div>
+                  <div class="liMain">Extra Class ham radio</div>
+                  <div class="liSub">RF curiosity, antennas, propagation, and useful comms.</div>
                 </div>
               </li>
             </ul>
@@ -604,21 +611,58 @@
     <section id="about" aria-label="About">
       <h2 class="sectionTitle reveal">About</h2>
       <div class="grid">
-        <div class="card reveal" style="grid-column: span 12;">
+        <div class="card reveal span12">
           <div class="cardInner">
             <h3>What I'm about</h3>
             <p>
               I like engineering that survives vibration, heat, bad documentation, and “it worked yesterday.”
-              I’m studying automotive technology (GM ASEP) and building side projects that mix hardware, Linux, and whatever tool gets the job done.
+              I’m studying automotive technology through GM ASEP, hold ASE certifications in electrical/electronic systems, steering & suspension, and brakes, and build side projects that mix hardware, Linux, and whatever tool gets the job done.
             </p>
             <div class="meta">
               <span class="pill">Diagnostics mindset</span>
+              <span class="pill">ASE certified</span>
+              <span class="pill">Extra Class radio</span>
               <span class="pill">Hands-on prototyping</span>
               <span class="pill">Open-source tooling</span>
               <span class="pill">Document the learnings</span>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="credentials" aria-label="Credentials">
+      <h2 class="sectionTitle reveal">Credentials</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <div class="cardInner">
+            <h3>GM ASEP</h3>
+            <p>Automotive technology student focused on GM systems, service information, diagnostics, and dealership-level repair work.</p>
+            <div class="meta">
+              <span class="pill">GM systems</span><span class="pill">Diagnostics</span><span class="pill">Service info</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="cardInner">
+            <h3>ASE Certifications</h3>
+            <p>ASE certified in electrical/electronic systems, steering & suspension, and brakes.</p>
+            <div class="meta">
+              <span class="pill">Electrical</span><span class="pill">Steering/Suspension</span><span class="pill">Brakes</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="cardInner">
+            <h3>Extra Class Ham Radio</h3>
+            <p>Amateur radio operator with Extra Class privileges and a practical interest in RF, antennas, propagation, and field-ready communication.</p>
+            <div class="meta">
+              <span class="pill">Extra Class</span><span class="pill">RF</span><span class="pill">Antennas</span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -630,7 +674,7 @@
             <h3>Automotive Technology</h3>
             <p>Diagnostics, systems understanding, and fixing the root cause — not the symptom.</p>
             <div class="meta">
-              <span class="pill">GM ASEP</span><span class="pill">Scan tools</span><span class="pill">Electrical</span>
+              <span class="pill">GM ASEP</span><span class="pill">ASE Electrical</span><span class="pill">Steering/Suspension</span><span class="pill">Brakes</span>
             </div>
           </div>
         </article>
@@ -668,9 +712,9 @@
         <article class="card reveal">
           <div class="cardInner">
             <h3>RF / Ham Radio</h3>
-            <p>Antennas, propagation, practical comms — plus the occasional science experiment.</p>
+            <p>Extra Class amateur radio, antennas, propagation, practical comms — plus the occasional science experiment.</p>
             <div class="meta">
-              <span class="pill">HF</span><span class="pill">Antennas</span><span class="pill">Noise hunting</span>
+              <span class="pill">Extra Class</span><span class="pill">HF</span><span class="pill">Antennas</span><span class="pill">Noise hunting</span>
             </div>
           </div>
         </article>
@@ -690,57 +734,24 @@
     <section id="projects" aria-label="Projects">
       <h2 class="sectionTitle reveal">Projects</h2>
       <div class="grid">
-        <article class="card reveal" style="grid-column: span 6;">
+        <article class="card reveal span6">
           <div class="cardInner">
-            <h3>Featured: GitHub profile</h3>
-            <p>
-              This site stays lightweight. The real meat lives in repos — code, notes, experiments, and whatever I'm building.
-            </p>
+            <h3>foss-radar</h3>
+            <p>Personal FOSS dashboard for discovering, tracking, and monitoring open-source software.</p>
             <div class="meta">
-              <a class="btn btnSmall btnPrimary" href="https://github.com/flyboy-byte" target="_blank" rel="noreferrer">Open GitHub</a>
-              <a class="btn btnSmall" href="#contact">Get in touch</a>
+              <span class="pill">TypeScript</span><span class="pill">FOSS tracking</span><span class="pill">Dashboard</span>
+              <a class="btn btnSmall btnPrimary" href="https://github.com/flyboy-byte/foss-radar" target="_blank" rel="noreferrer">Open repo</a>
             </div>
           </div>
         </article>
 
-        <article class="card reveal" style="grid-column: span 6;">
+        <article class="card reveal span6">
           <div class="cardInner">
-            <h3>Featured projects</h3>
-            <p>
-              A few highlights live here. The full chaos lab is on GitHub.
-            </p>
+            <h3>drag-tree</h3>
+            <p>NHRA Pro Tree drag strip reaction timer built as an Expo React Native app.</p>
             <div class="meta">
-              <span class="pill">ESP32</span><span class="pill">3D print</span><span class="pill">Linux</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card reveal" style="grid-column: span 4;">
-          <div class="cardInner">
-            <h3>ESP32 vehicle logger</h3>
-            <p>Sensors + Wi‑Fi dashboard for temps/voltage/whatever I’m chasing. Built to survive heat and noise.</p>
-            <div class="meta">
-              <span class="pill">ESP32</span><span class="pill">Telemetry</span><span class="pill">Web UI</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card reveal" style="grid-column: span 4;">
-          <div class="cardInner">
-            <h3>Project title</h3>
-            <p>Short description. Keep it concrete — people love specifics.</p>
-            <div class="meta">
-              <span class="pill">Tag</span><span class="pill">Tag</span><span class="pill">Tag</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="card reveal" style="grid-column: span 4;">
-          <div class="cardInner">
-            <h3>Linux homelab bits</h3>
-            <p>Small services, scripts, and configs that make machines behave: backups, monitoring, and “why is this down?” tools.</p>
-            <div class="meta">
-              <span class="pill">Linux</span><span class="pill">systemd</span><span class="pill">Networking</span>
+              <span class="pill">TypeScript</span><span class="pill">React Native</span><span class="pill">Expo</span>
+              <a class="btn btnSmall btnPrimary" href="https://github.com/flyboy-byte/drag-tree" target="_blank" rel="noreferrer">Open repo</a>
             </div>
           </div>
         </article>
@@ -750,7 +761,7 @@
     <section id="contact" aria-label="Contact">
       <h2 class="sectionTitle reveal">Contact</h2>
       <div class="grid">
-        <div class="card reveal" style="grid-column: span 12;">
+        <div class="card reveal span12">
           <div class="cardInner">
             <h3>Best ways to reach me</h3>
             <p>
@@ -800,8 +811,20 @@
       try{
         await navigator.clipboard.writeText(DISCORD);
         showToast('Copied Discord: ' + DISCORD);
-      }catch(e){
-        window.prompt('Copy Discord handle:', DISCORD);
+      } catch(e) {
+        const ta = document.createElement('textarea');
+        ta.value = DISCORD;
+        ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('Copied Discord: ' + DISCORD);
+        } catch(e2) {
+          window.prompt('Copy Discord handle:', DISCORD);
+        }
+        document.body.removeChild(ta);
       }
     }
 
